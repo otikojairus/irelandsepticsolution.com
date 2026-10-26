@@ -219,8 +219,8 @@ export const NATIONAL_PAGES = PAGES.filter((page) => page.kind === "national");
 export const CITY_PAGES = PAGES.filter((page) => page.kind === "city");
 export const COUNTY_PAGES = PAGES.filter((page) => page.kind === "county");
 
-const PHONE_DISPLAY_DEFAULT = "1800-XXX-XXXX";
-const PHONE_E164_DEFAULT = "+3531800XXXXXX";
+const PHONE_DISPLAY_DEFAULT = "+18889710910";
+const PHONE_E164_DEFAULT = "+18889710910";
 
 function isPlaceholderPhone(value?: string) {
   return !value || /x{2,}/i.test(value) || value.includes("XXX");

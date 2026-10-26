@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Sans, Fraunces } from "next/font/google";
 import { SiteFooter, SiteHeader, StickyMobileCta } from "@/components/site-chrome";
+import { StickyWhatsAppWidget } from "@/components/whatsapp-widget";
 import { absoluteUrl, SITE_NAME } from "@/lib/pages";
 import "./globals.css";
 
@@ -30,6 +31,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <SiteFooter />
         </div>
         <StickyMobileCta />
+        <StickyWhatsAppWidget />
       </body>
     </html>
   );
